@@ -1,294 +1,34 @@
 <!DOCTYPE html>
-<!-- saved from url=(0022)http://localhost:3000/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <link rel="icon" href="http://localhost:3000/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Web site created using create-react-app">
-    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="http://localhost:3000/manifest.json">
-    <!--
-      Notice the use of  in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  <script defer="" src="./index_files/bundle.js"></script><style>@import url(https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap);</style><style>body {
-  background-color: #463F3A;
-  color: #F4F3EE;
-  height: 100%;
-
-  font-family: "Mulish", sans-serif !important;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-#root {
-  height: 100%;
-}
-
-.message {
-  font-size: 0.5em;
-  min-height: 1.3em;
-  margin-bottom: 0.5em;
-
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
+<html>
+<head>
+  <meta charset="UTF-8">
+<link rel="icon" href="icon.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
 
 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name = "viewport" content="width=device-width, initial-scaale=1.0">
 
-.pomodoro 
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-
-
-  position: relative;
-  top: 10px;
-
-  padding-bottom: 100px;
-
-
-  justify-content: center;
-  align-items: center;
-}
-.card 
-{
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
-  
-  padding-bottom: 100px;
-}
-
-.card {
-  width: 400px;
-  margin-top: 40px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-text
-{
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
-
-  margin-top: 20px;
-  width: 50%;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.message {
-  margin-top: 20px;
-  font-size: 20px;
-  color: #F4F3EE;
-
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.timer {
-  font-size: 48px;
-  margin-top: 20px;
-  color: #BCB8B1;
-
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #E0AFA0;
-  color: #F4F3EE;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-button:hover {
-  background-color: #c79789;
-}
+</head>
+<script defer="defer" src="bundle.js"></script>
+<body id="root"></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<link rel="icon" href="icon.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Pangolin&display=swap" rel="stylesheet">
 
 
-.heading {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #BCB8B1;
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name = "viewport" content="width=device-width, initial-scaale=1.0">
 
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-
-  justify-content: center;
-  align-items: center;
-
-  display: flex;
-}
-
-form {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-.button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #F4F3EE;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #0056b3;
-}
-
-.items-list {
-  /*display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;*/
-
-}
-
-.items-list .bp3-tag {
-  width: 100%;
-}
-
-
-.tag {
-  margin-bottom: 10px;
-}
-.item {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.task {
-  flex: 1 1;
-}
-
-.delete-button {
-  background-color: #dc3545;
-  color: #F4F3EE;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.finished {
-  text-decoration: line-through;
-}
-
-.add-button
-{
-  
-}
-.bp5-tag-remove
-{
-  margin-left: 10px;
-}
-
-
-
-
-.checkbox 
-{
-  display: flex;
-  align-items: center;
-
-  margin-top: 20px;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 3px;
-}
-.checkbox input {
-  margin-right: 15px;
-  opacity: 0;
-  cursor:pointer
-}
-
-.checkbox input:checked + .checkmark {
-  opacity: 1;
-}
-
-.checkbox:hover {
-  border-color: #E0AFA0;
-  
-}
-
-.checkbox-content {
-  display: flex;
-  align-items: center;
-
-  justify-content: space-between;
-  padding: 8px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.checkbox-content button {
-  margin-left: 20px;
-}
-
-.deleteTask
-{
-  width: 20px;
-
-  font-size: 12px;
-  padding: 4px 58px 5px 10px;
-
-  top: -5px;
-
-  position: relative;
-}
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztFQUNkLFlBQVk7O0VBRVosNENBQTRDO0VBQzVDLHlCQUF5QjtFQUN6QixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLG9CQUFvQjs7RUFFcEIsaUNBQWlDO0VBQ2pDLHlCQUF5QjtFQUN6QixrQkFBa0I7QUFDcEI7Ozs7QUFJQTs7RUFFRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjs7OztFQUluQixrQkFBa0I7RUFDbEIsU0FBUzs7RUFFVCxxQkFBcUI7OztFQUdyQix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCO0FBQ0E7O0VBRUUsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixjQUFjOztFQUVkLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix3Q0FBd0M7QUFDMUM7QUFDQTs7RUFFRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGNBQWM7O0VBRWQsZ0JBQWdCO0VBQ2hCLFVBQVU7RUFDVixtQkFBbUI7RUFDbkIsd0NBQXdDO0FBQzFDO0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLGNBQWM7O0VBRWQsaUNBQWlDO0VBQ2pDLHlCQUF5QjtFQUN6QixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLGNBQWM7O0VBRWQsaUNBQWlDO0VBQ2pDLHlCQUF5QjtFQUN6QixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZix5QkFBeUI7RUFDekIsY0FBYztFQUNkLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsZUFBZTs7RUFFZixpQ0FBaUM7RUFDakMseUJBQXlCO0VBQ3pCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7O0FBR0E7RUFDRSxlQUFlO0VBQ2YsbUJBQW1CO0VBQ25CLGNBQWM7O0VBRWQsaUNBQWlDO0VBQ2pDLHlCQUF5QjtFQUN6QixrQkFBa0I7O0VBRWxCLHVCQUF1QjtFQUN2QixtQkFBbUI7O0VBRW5CLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGFBQWE7O0VBRWIsbUJBQW1CO0VBQ25CLHVCQUF1QjtBQUN6Qjs7OztBQUlBO0VBQ0Usa0JBQWtCO0VBQ2xCLHlCQUF5QjtFQUN6QixjQUFjO0VBQ2QsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0U7Ozs7dUJBSXFCOztBQUV2Qjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7O0FBR0E7RUFDRSxtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsU0FBTztBQUNUOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGNBQWM7RUFDZCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsNkJBQTZCO0FBQy9COztBQUVBOzs7QUFHQTtBQUNBOztFQUVFLGlCQUFpQjtBQUNuQjs7Ozs7QUFLQTs7RUFFRSxhQUFhO0VBQ2IsbUJBQW1COztFQUVuQixnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLFdBQVc7RUFDWCxZQUFZO0VBQ1osc0JBQXNCO0VBQ3RCLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1Y7QUFDRjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLHFCQUFxQjs7QUFFdkI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsbUJBQW1COztFQUVuQiw4QkFBOEI7RUFDOUIsWUFBWTtFQUNaLGVBQWU7RUFDZixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7O0VBRUUsV0FBVzs7RUFFWCxlQUFlO0VBQ2YsMEJBQTBCOztFQUUxQixTQUFTOztFQUVULGtCQUFrQjtBQUNwQiIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PU11bGlzaDppdGFsLHdnaHRAMCwyMDAuLjEwMDA7MSwyMDAuLjEwMDAmZGlzcGxheT1zd2FwJyk7XG5cbmJvZHkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNDYzRjNBO1xuICBjb2xvcjogI0Y0RjNFRTtcbiAgaGVpZ2h0OiAxMDAlO1xuXG4gIGZvbnQtZmFtaWx5OiBcIk11bGlzaFwiLCBzYW5zLXNlcmlmICFpbXBvcnRhbnQ7XG4gIGZvbnQtb3B0aWNhbC1zaXppbmc6IGF1dG87XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbn1cblxuI3Jvb3Qge1xuICBoZWlnaHQ6IDEwMCU7XG59XG5cbi5tZXNzYWdlIHtcbiAgZm9udC1zaXplOiAwLjVlbTtcbiAgbWluLWhlaWdodDogMS4zZW07XG4gIG1hcmdpbi1ib3R0b206IDAuNWVtO1xuXG4gIGZvbnQtZmFtaWx5OiBcIk11bGlzaFwiLCBzYW5zLXNlcmlmO1xuICBmb250LW9wdGljYWwtc2l6aW5nOiBhdXRvO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG59XG5cblxuXG4ucG9tb2Rvcm8gXG57XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG5cblxuXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdG9wOiAxMHB4O1xuXG4gIHBhZGRpbmctYm90dG9tOiAxMDBweDtcblxuXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmNhcmQgXG57XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIG92ZXJmbG93OiBhdXRvO1xuICBcbiAgcGFkZGluZy1ib3R0b206IDEwMHB4O1xufVxuXG4uY2FyZCB7XG4gIHdpZHRoOiA0MDBweDtcbiAgbWFyZ2luLXRvcDogNDBweDtcbiAgcGFkZGluZzogMjBweDtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbn1cbnRleHRcbntcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgb3ZlcmZsb3c6IGF1dG87XG5cbiAgbWFyZ2luLXRvcDogMjBweDtcbiAgd2lkdGg6IDUwJTtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbn1cbi5tZXNzYWdlIHtcbiAgbWFyZ2luLXRvcDogMjBweDtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBjb2xvcjogI0Y0RjNFRTtcblxuICBmb250LWZhbWlseTogXCJNdWxpc2hcIiwgc2Fucy1zZXJpZjtcbiAgZm9udC1vcHRpY2FsLXNpemluZzogYXV0bztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xufVxuXG4udGltZXIge1xuICBmb250LXNpemU6IDQ4cHg7XG4gIG1hcmdpbi10b3A6IDIwcHg7XG4gIGNvbG9yOiAjQkNCOEIxO1xuXG4gIGZvbnQtZmFtaWx5OiBcIk11bGlzaFwiLCBzYW5zLXNlcmlmO1xuICBmb250LW9wdGljYWwtc2l6aW5nOiBhdXRvO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG59XG5cbmJ1dHRvbiB7XG4gIG1hcmdpbi10b3A6IDEwcHg7XG4gIHBhZGRpbmc6IDEwcHggMjBweDtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRTBBRkEwO1xuICBjb2xvcjogI0Y0RjNFRTtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcblxuICBmb250LWZhbWlseTogXCJNdWxpc2hcIiwgc2Fucy1zZXJpZjtcbiAgZm9udC1vcHRpY2FsLXNpemluZzogYXV0bztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xufVxuXG5idXR0b246aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjYzc5Nzg5O1xufVxuXG5cbi5oZWFkaW5nIHtcbiAgZm9udC1zaXplOiAyNHB4O1xuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICBjb2xvcjogI0JDQjhCMTtcblxuICBmb250LWZhbWlseTogXCJNdWxpc2hcIiwgc2Fucy1zZXJpZjtcbiAgZm9udC1vcHRpY2FsLXNpemluZzogYXV0bztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gIGRpc3BsYXk6IGZsZXg7XG59XG5cbmZvcm0ge1xuICBkaXNwbGF5OiBmbGV4O1xuXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG5cblxuLmJ1dHRvbiB7XG4gIHBhZGRpbmc6IDEwcHggMjBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwN2JmZjtcbiAgY29sb3I6ICNGNEYzRUU7XG4gIGJvcmRlcjogbm9uZTtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5idXR0b246aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDA1NmIzO1xufVxuXG4uaXRlbXMtbGlzdCB7XG4gIC8qZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcblxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsqL1xuXG59XG5cbi5pdGVtcy1saXN0IC5icDMtdGFnIHtcbiAgd2lkdGg6IDEwMCU7XG59XG5cblxuLnRhZyB7XG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG4uaXRlbSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIG1hcmdpbi10b3A6IDEwcHg7XG59XG5cbi50YXNrIHtcbiAgZmxleDogMTtcbn1cblxuLmRlbGV0ZS1idXR0b24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZGMzNTQ1O1xuICBjb2xvcjogI0Y0RjNFRTtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIHBhZGRpbmc6IDVweCAxMHB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5maW5pc2hlZCB7XG4gIHRleHQtZGVjb3JhdGlvbjogbGluZS10aHJvdWdoO1xufVxuXG4uYWRkLWJ1dHRvblxue1xuICBcbn1cbi5icDUtdGFnLXJlbW92ZVxue1xuICBtYXJnaW4tbGVmdDogMTBweDtcbn1cblxuXG5cblxuLmNoZWNrYm94IFxue1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gIG1hcmdpbi10b3A6IDIwcHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgd2lkdGg6IDIwcHg7XG4gIGhlaWdodDogMjBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbiAgYm9yZGVyOiAycHggc29saWQgI2NjYztcbiAgYm9yZGVyLXJhZGl1czogM3B4O1xufVxuLmNoZWNrYm94IGlucHV0IHtcbiAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xuICBvcGFjaXR5OiAwO1xuICBjdXJzb3I6cG9pbnRlclxufVxuXG4uY2hlY2tib3ggaW5wdXQ6Y2hlY2tlZCArIC5jaGVja21hcmsge1xuICBvcGFjaXR5OiAxO1xufVxuXG4uY2hlY2tib3g6aG92ZXIge1xuICBib3JkZXItY29sb3I6ICNFMEFGQTA7XG4gIFxufVxuXG4uY2hlY2tib3gtY29udGVudCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG5cbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBwYWRkaW5nOiA4cHg7XG4gIG1hcmdpbi10b3A6IDhweDtcbiAgbWFyZ2luLWJvdHRvbTogOHB4O1xufVxuXG4uY2hlY2tib3gtY29udGVudCBidXR0b24ge1xuICBtYXJnaW4tbGVmdDogMjBweDtcbn1cblxuLmRlbGV0ZVRhc2tcbntcbiAgd2lkdGg6IDIwcHg7XG5cbiAgZm9udC1zaXplOiAxMnB4O1xuICBwYWRkaW5nOiA0cHggNThweCA1cHggMTBweDtcblxuICB0b3A6IC01cHg7XG5cbiAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"><div class="pomodoro"><text>Помидоро - это метод управления временем, идея которого заключается в том, чтобы работать фокусированно на задаче в течение определенного периода времени (обычно 25 минут, называемых "помидорами"), а затем делать короткий перерыв. После нескольких "помидоров" следует более длительный перерыв. Этот метод помогает улучшить концентрацию и повысить продуктивность. 🍅🕒</text><div class="message"></div><div class="timer">25:00</div><start-stop><button style="margin: 10px;">Пуск</button><button disabled="" style="margin: 10px;">Стоп</button></start-stop><div class="card bp5-card bp5-elevation-2" style="box-shadow: rgb(157, 149, 145) 0px 0px 10px 10px;"><h2 class="heading">To-do List</h2><form><div role="group" class="bp5-control-group bp5-fill"><div class="bp5-input-group"><input type="text" placeholder="Введите задачу" class="bp5-input" value="" style="background-color: rgb(244, 243, 238); border-color: rgb(244, 243, 238); text-align: center; font-family: Mulish, sans-serif;"></div><button type="submit" class="bp5-button bp5-intent-primary" style="position: relative; left: 25px;"><span class="bp5-button-text">Добавить</span></button></div></form><div class="items-list"><label class="bp5-control bp5-checkbox checkbox" style="background-color: rgb(224, 175, 160); border-color: rgb(224, 175, 160);"><input type="checkbox"><span class="bp5-control-indicator"></span><div class="checkbox-content"><span class="finished">вававы</span><button class="deleteTask">Удалить</button></div></label><label class="bp5-control bp5-checkbox checkbox" style="background-color: rgb(224, 175, 160); border-color: rgb(224, 175, 160);"><input type="checkbox"><span class="bp5-control-indicator"></span><div class="checkbox-content"><span class="finished">выавыавы</span><button class="deleteTask">Удалить</button></div></label><label class="bp5-control bp5-checkbox checkbox" style="background-color: rgb(244, 243, 238); border-color: rgb(244, 243, 238);"><input type="checkbox"><span class="bp5-control-indicator"></span><div class="checkbox-content"><span class="">dfdfdsfds</span><button class="deleteTask">Удалить</button></div></label><label class="bp5-control bp5-checkbox checkbox" style="background-color: rgb(244, 243, 238); border-color: rgb(244, 243, 238);"><input type="checkbox"><span class="bp5-control-indicator"></span><div class="checkbox-content"><span class="">вававыавыавыавыа</span><button class="deleteTask">Удалить</button></div></label><label class="bp5-control bp5-checkbox checkbox" style="background-color: rgb(244, 243, 238); border-color: rgb(244, 243, 238);"><input type="checkbox"><span class="bp5-control-indicator"></span><div class="checkbox-content"><span class="">dfdsfdsfsdfds</span><button class="deleteTask">Удалить</button></div></label></div></div></div></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  
-
-</body></html>
+</head>
+<script defer="defer" src="bundle.js"></script>
+<body id="root"></body>
+</html>
